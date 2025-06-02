@@ -77,11 +77,12 @@ function updateSummary() {
 }
 
 function formatCurrency(number) {
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("en-IN", {
     style: "currency",
-    currency: "USD",
+    currency: "INR",
   }).format(number);
 }
+
 
 function removeTransaction(id) {
   // filter out the one we wanted to delete
